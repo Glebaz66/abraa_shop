@@ -856,32 +856,73 @@ html {
   align-self: stretch !important;
 }
 
-section {
-  background-color: yellowgreen;
+header {
+  background-color: #fff;
+  outline: 1px solid #000;
+  height: 65px;
+  margin-top: 50px;
 }
 
-.post {
-  box-shadow: -1px -2px 55px -9px rgba(0, 0, 0, 0.75);
-  padding: 20px;
+.nav {
+  margin: 20px 0 0 15px;
 }
 
-.title {
-  text-align: center;
+.menu {
+  width: 30px;
+  height: 15px;
+  border-bottom: 2px solid #000;
+  position: relative;
 }
 
-.btn {
-  padding: 10px 20px;
-  background-color: green;
-  border: none;
-  outline: none;
+.menu::before,
+.menu::after {
+  content: "";
+  display: block;
+  width: 30px;
+  border-bottom: 2px solid #000;
+  position: absolute;
+  left: 0;
 }
 
-.margin {
-  margin-bottom: 20px;
+.menu::before {
+  top: 3px;
 }
 
-.margin:nth-last-child(-n+3) {
-  margin-bottom: 0;
+.menu::after {
+  bottom: -11px;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar-dropdown {
+  height: 30px;
+  background-color: #4da1ff;
+  line-height: 30px;
+}
+
+.search-bar-dropdown > input {
+  height: 28px;
+  width: 80%;
+}
+
+.search-bar-dropdown-list {
+  display: none;
+}
+
+.new-rfq {
+  margin-top: 20px;
+  outline: 1px solid #000;
+}
+
+.profile {
+  outline: 1px solid #000;
+}
+
+.lang {
+  outline: 1px solid #000;
+  margin-right: 15px;
 }
 
 @media (min-width: 576px) {
