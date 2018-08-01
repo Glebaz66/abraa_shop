@@ -35,10 +35,17 @@ header {
     height: 30px;
     background-color: #4da1ff;
     line-height: 30px;
+    position: relative;
 }
 .search-bar-dropdown > input {
     height: 28px;
-    width: 80%;
+    margin-left: 30px;
+    width: calc(100% - 87px);
+    position: absolute;
+    top: 1px;
+}
+.search-bar-icon {
+
 }
 .search-bar-dropdown-list {
     display: none;
