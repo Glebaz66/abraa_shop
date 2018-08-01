@@ -3,8 +3,10 @@
 */
 @import 'normalize';
 @import 'bootstrap-grid.min';
+@import 'footer';
 
 .row {
 width: 100%;
 text-align: center; 
+margin-left: 0;
 }

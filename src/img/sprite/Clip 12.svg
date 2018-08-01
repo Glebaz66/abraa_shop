@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" width="26" height="25">
-	<style>
-		tspan { white-space:pre }
-		.shp0 { fill: #000000 } 
-	</style>
-	<path id="Clip 12" class="shp0" d="M0,25h25v-24.68h-25z" />
-</svg>
