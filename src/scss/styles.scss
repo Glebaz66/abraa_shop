@@ -2,11 +2,7 @@
    Import partials below
 */
 @import 'normalize';
+
 @import 'bootstrap-grid.min';
-@import 'bootstrap-grid.min.map';
 
-
-.row {
-width: 100%;
-text-align: center; 
-}
+@import 'header';
