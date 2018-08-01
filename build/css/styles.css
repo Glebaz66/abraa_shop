@@ -856,83 +856,6 @@ html {
   align-self: stretch !important;
 }
 
-.footer__wrapper {
-  background-color: #e9ecf0;
-  width: 100%;
-}
-
-.footer__wrapper .footer__logo {
-  text-align: left;
-}
-
-.footer {
-  padding-top: 25px;
-  padding-bottom: 35px;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #d5dae0;
-}
-
-.footer .text {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-  font-size: 16px;
-}
-
-.footer__title {
-  text-align: left;
-}
-
-.footer__list__item:nth-last-of-type(n+2) {
-  margin-bottom: 10px;
-}
-
-.footer__list__item > a {
-  color: #3e4352;
-  text-decoration: none;
-  transition-duration: 50ms;
-}
-
-.footer__list__item > a:hover {
-  color: #4382f9;
-}
-
-.footer__sublist {
-  display: flex;
-  padding: 0;
-  text-align: left;
-  list-style: none;
-}
-
-.footer__sublist__item:nth-last-of-type(n+2) {
-  margin-right: 10px;
-}
-
-.footer--fluid {
-  padding: 0;
-}
-
-.copyrights {
-  margin-left: auto;
-}
-
-.footer__menu {
-  padding: 0;
-  list-style: none;
-}
-
-.row {
-  width: 100%;
-  text-align: center;
-  margin-left: 0;
-}
-
 header {
   background-color: #fff;
   outline: 1px solid #000;
@@ -1004,6 +927,77 @@ header {
 .lang {
   outline: 1px solid #000;
   margin-right: 15px;
+}
+
+.footer__wrapper {
+  background-color: #e9ecf0;
+  width: 100%;
+}
+
+.footer__wrapper .footer__logo {
+  text-align: left;
+}
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 35px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #d5dae0;
+}
+
+.footer .text {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 16px;
+}
+
+.footer__title {
+  text-align: left;
+}
+
+.footer__list__item:nth-last-of-type(n+2) {
+  margin-bottom: 10px;
+}
+
+.footer__list__item > a {
+  color: #3e4352;
+  text-decoration: none;
+  transition-duration: 50ms;
+}
+
+.footer__list__item > a:hover {
+  color: #4382f9;
+}
+
+.footer__sublist {
+  display: flex;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.footer__sublist__item:nth-last-of-type(n+2) {
+  margin-right: 10px;
+}
+
+.footer--fluid {
+  padding: 0;
+}
+
+.copyrights {
+  margin-left: auto;
+}
+
+.footer__menu {
+  padding: 0;
+  list-style: none;
 }
 
 @media (min-width: 576px) {
