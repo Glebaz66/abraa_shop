@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 26" width="25" height="26">
+	<defs>
+		<image width="25" height="26" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAMAAAB1owf/AAAAaVBMVEUAAAA+QlE+QlE+QlE+QlE+QlE+QlE+QlE+QlE+QlE+QlE+QlE+QlE+QlFeYm++wcjp7PC/wsnQ09nd4OWMkJrj5upgY3DJzdNPU2HAw8pydoLe4eXHytA+QlE+QlE+QlE+QlE+QlE+QlEkhqDmAAAAI3RSTlMAPGuPXzCg/4BgwGzwkf///////////////////4VUEODQkNGEuYUAAACASURBVHicrdLZDoIwEIXhgwiDG20BBdeK7/+QkBjCiHOu9L/slzTTBUCySpetM4zlYlUAGxNEMmyJ7LAncgCBX6R0fs6VSoLXOSXvlWqipdTSHJnIqWXSnYlcrvZu/mZM8Dl10CfVFPRJ/3aj7E3vKIg8EJ8m9OOvivm39a8I3gAWCRdQ6g+rewAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Mask by Clip 2" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
