@@ -1,0 +1,65 @@
+header {
+    background-color: #fff;
+    outline: 1px solid #000;
+    height: 65px;
+    margin-top: 50px;
+}
+.nav {
+    margin: 20px 0 0 15px;
+}
+.menu {
+    width: 30px;
+    height: 15px;
+    border-bottom: 2px solid #000;
+    position: relative;
+}
+.menu::before,
+.menu::after {
+    content: "";
+    display: block;
+    width: 30px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    left: 0;
+}
+.menu::before {
+    top: 3px;
+}
+.menu::after {
+    bottom: -11px;
+}
+.search-bar {
+    margin-top: 20px;
+}
+.search-bar-dropdown {
+    height: 30px;
+    background-color: #4da1ff;
+    line-height: 30px;
+    position: relative;
+}
+.search-bar-dropdown > input {
+    height: 28px;
+    margin-left: 30px;
+    width: calc(100% - 87px);
+    position: absolute;
+    top: 1px;
+}
+.search-bar-icon {
+
+}
+.search-bar-dropdown-list {
+    display: none;
+}
+
+.new-rfq {
+    margin-top: 20px;
+    outline: 1px solid #000;
+}
+.profile {
+    outline: 1px solid #000;
+    
+}
+.lang {
+    outline: 1px solid #000;
+    margin-right: 15px;
+}
