@@ -5,3 +5,10 @@
 @import 'bootstrap-grid.min';
 @import 'header';
 @import 'footer';
+@import 'categories';
+
+.row {
+width: 100%;
+text-align: center; 
+margin-left: 0;
+}
