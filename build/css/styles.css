@@ -856,6 +856,79 @@ html {
   align-self: stretch !important;
 }
 
+header {
+  background-color: #fff;
+  outline: 1px solid #000;
+  height: 65px;
+  margin-top: 50px;
+}
+
+.nav {
+  margin: 20px 0 0 15px;
+}
+
+.menu {
+  width: 30px;
+  height: 15px;
+  border-bottom: 2px solid #000;
+  position: relative;
+}
+
+.menu::before,
+.menu::after {
+  content: "";
+  display: block;
+  width: 30px;
+  border-bottom: 2px solid #000;
+  position: absolute;
+  left: 0;
+}
+
+.menu::before {
+  top: 3px;
+}
+
+.menu::after {
+  bottom: -11px;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar-dropdown {
+  height: 30px;
+  background-color: #4da1ff;
+  line-height: 30px;
+  position: relative;
+}
+
+.search-bar-dropdown > input {
+  height: 28px;
+  margin-left: 30px;
+  width: calc(100% - 87px);
+  position: absolute;
+  top: 1px;
+}
+
+.search-bar-dropdown-list {
+  display: none;
+}
+
+.new-rfq {
+  margin-top: 20px;
+  outline: 1px solid #000;
+}
+
+.profile {
+  outline: 1px solid #000;
+}
+
+.lang {
+  outline: 1px solid #000;
+  margin-right: 15px;
+}
+
 .footer__wrapper {
   background-color: #e9ecf0;
   width: 100%;
@@ -1045,6 +1118,10 @@ html {
   transform: rotate(45deg);
 }
 
+.filter {
+  text-align: left;
+}
+
 .category__list {
   list-style: none;
   vertical-align: middle;
@@ -1052,6 +1129,77 @@ html {
 
 .category__list__item:nth-last-of-type(n+2) {
   margin-bottom: 15px;
+}
+
+.category__tabs {
+  background-color: #f3f5f8;
+  display: flex;
+}
+
+.card {
+  border-left: 2px solid #e9ecf0;
+}
+
+.card:first-of-type {
+  border-left: 2px solid transparent;
+}
+
+.card__post {
+  background-color: #fff;
+  padding: 40px 15px 20px;
+}
+
+.card-img-top {
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.card .card-body {
+  text-align: left;
+}
+
+.card .card-body .card-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #718091;
+}
+
+.card .card-body .card-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #252833;
+}
+
+.card .card-body .card-text-secondary {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.card .card-body .card__btn {
+  display: inline-block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  color: #4382f9;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #4382f9;
+  border-radius: 3px;
+  transition-duration: 100ms;
+}
+
+.card .card-body .card__btn:hover {
+  color: #fff;
+  background-color: #4382f9;
+}
+
+.category__list {
+  padding: 0;
 }
 
 .row {
