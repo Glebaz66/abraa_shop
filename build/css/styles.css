@@ -1271,6 +1271,7 @@ header {
   margin-top: 50px;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .nav {
@@ -1306,16 +1307,20 @@ header {
   width: 80%;
 }
 
+.search-bar {
+  position: relative;
+}
+
 .search-bar-dropdown {
   background-color: #4da1ff;
-  line-height: 30px;
-  position: relative;
-  border-radius: 5px;
+  line-height: 45px;
+  border-radius: 2px;
 }
 
 .search-bar-dropdown-title {
   width: 70px;
   text-align: center;
+  margin: 0;
 }
 
 .search-bar-dropdown-title::after {
@@ -1325,13 +1330,13 @@ header {
   border: 7px solid transparent;
   border-top: 7px solid white;
   position: absolute;
-  top: 12px;
+  top: 20px;
   left: 68px;
 }
 
 .search-bar-dropdown > input {
-  height: 28px;
-  margin-left: 85px;
+  height: 43px;
+  margin-left: -169px;
   width: calc(100% - 87px);
   position: absolute;
   top: 1px;
@@ -1342,7 +1347,7 @@ header {
   height: 25px;
   background-image: url(../img/icon-search.png);
   position: absolute;
-  top: 3px;
+  top: 10px;
   right: 5px;
 }
 
