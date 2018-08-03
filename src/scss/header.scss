@@ -10,6 +10,7 @@ header {
 .nav {
     display: flex;
 }
+
 .menu {
     width: 30px;
     height: 15px;
@@ -61,10 +62,10 @@ header {
 }
 .search-bar-dropdown > input {
     height: 43px;
-    margin-left: -169px;
     width: calc(100% - 87px);
     position: absolute;
     top: 1px;
+    right: 0;
 }
 .search-bar-icon {
     width: 25px;
