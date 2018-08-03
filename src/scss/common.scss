@@ -6,7 +6,6 @@ $color-blue-hover: #1538ad;
 $color-green: #60c18c;
 $color-border-grey: #ccd2db;
 $color-comment: rgb(62, 67, 82);
-
 $color--white: #ffffff;
 $color--black: #000000;
 $color--light-grey: #e6e6e6;
@@ -32,4 +31,13 @@ $color--secondary: #0e647d;
 
 .top-grey-line {
   border-top: 1px solid $color-border-grey;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
