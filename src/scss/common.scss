@@ -1,0 +1,64 @@
+$color-footer-grey: #e9ecf0;
+$color-main-grey: #f3f5f8;
+$color-dark-grey: #858d9e;
+$color-blue: #4da1ff;
+$color-blue-hover: #1538ad;
+$color-green: #60c18c;
+$color-border-grey: #ccd2db;
+$color-comment: rgb(62, 67, 82);
+
+
+$color--white: #FFFFFF;
+$color--black: #000000;
+$color--light-grey: #E6E6E6;
+$color--grey: #CCCCCC;
+$color--dark-grey: #7B7B7B;
+$color--primary: #2AA1C0;
+$color--secondary: #0E647D;
+
+.wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+.comment {
+  font-size: 10px;
+  color: $color-comment;
+  font-family: sans-serif;
+  text-align: right;
+}
+
+.bottom-grey-line {
+  border-bottom: 1px solid $color-border-grey;
+}
+
+.top-grey-line {
+  border-top: 1px solid $color-border-grey;
+}
+
+#sidebarCollapse span {
+      width: 80%;
+      height: 2px;
+      margin: 0 auto;
+      display: block;
+      background: #555;
+      transition: all 0.8s cubic-bezier(0.81, -0.33, 0.345, 1.375);
+    }
+    #sidebarCollapse span:first-of-type {
+      /* rotate first one */
+      transform: rotate(45deg) translate(2px, 2px);
+    }
+    #sidebarCollapse span:nth-of-type(2) {
+      /* second one is not visible */
+      opacity: 0;
+    }
+    #sidebarCollapse span:last-of-type {
+      /* rotate third one */
+      transform: rotate(-45deg) translate(1px, -1px);
+    }
+    #sidebarCollapse.active span {
+      /* no rotation */
+      transform: none;
+      /* all bars are visible */
+      opacity: 1;
+      margin: 5px auto;
+     }
