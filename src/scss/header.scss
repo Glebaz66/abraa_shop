@@ -134,3 +134,34 @@ header {
         display: none;
     }
 }
+
+
+
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: #555;
+    transition: all 0.8s cubic-bezier(0.81, -0.33, 0.345, 1.375);
+  }
+  #sidebarCollapse span:first-of-type {
+    /* rotate first one */
+    transform: rotate(45deg) translate(2px, 2px);
+  }
+  #sidebarCollapse span:nth-of-type(2) {
+    /* second one is not visible */
+    opacity: 0;
+  }
+  #sidebarCollapse span:last-of-type {
+    /* rotate third one */
+    transform: rotate(-45deg) translate(1px, -1px);
+  }
+  #sidebarCollapse.active span {
+    /* no rotation */
+    transform: none;
+    /* all bars are visible */
+    opacity: 1;
+    margin: 5px auto;
+  }
+  

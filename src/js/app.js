@@ -1,7 +1,7 @@
 const btn = document.getElementById('content')
-const aside = document.querySelector('.category')
-const header = document.querySelector('.header')
-const main = document.querySelector('.main')
+const aside = document.querySelector('.categories-wrp .category')
+const header = document.querySelector('.categories-wrp .category__header')
+const main = document.querySelector('.categories-wrp .category__main')
 
 btn.addEventListener('click', hide, false)
 

@@ -1,9 +1,9 @@
 'use strict';
 
 var btn = document.getElementById('content');
-var aside = document.querySelector('.category');
-var header = document.querySelector('.header');
-var main = document.querySelector('.main');
+var aside = document.querySelector('.categories-wrp .category');
+var header = document.querySelector('.categories-wrp .category__header');
+var main = document.querySelector('.categories-wrp .category__main');
 
 btn.addEventListener('click', hide, false);
 
