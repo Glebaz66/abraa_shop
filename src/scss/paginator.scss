@@ -26,4 +26,60 @@
     &-btn:focus {
         outline: none;
     }
+
+    &-btn:hover {
+        background-color: #4da1ff;
+        color: #fff;
+    }
+
+
+    & .page-item:not(:last-of-type) {
+        margin-right: 4px;
+    }
+
+    
+    & .page-item .page-link {
+        border-radius: 5px;
+        color: #4da1ff;
+        border: 1px solid #4da1ff;
+        background: transparent;
+    }
+
+    & .page-item .page-link:focus{
+        box-shadow: none;
+    }
+
+    & .page-item .page-link-hov:hover {
+        background-color: #4da1ff;
+        color: #fff;
+    }
+
+    & .dots .page-link {
+        border: none;
+        background: transparent;
+    }
+
+    & .page-item .arrow {
+        border: none;
+        background: transparent;
+    }
+    
+    & .page-item:first-of-type .page-link {
+        padding: 5px 0 0 0;
+    }
+
+    & .page-item:last-of-type .page-link {
+        padding: 5px 0 0 0;
+    }
+
+
+    & .arrow-first {
+        transform: rotate(-90deg);
+    }
+
+    & .arrow-second {
+        transform: rotate(90deg);
+    }
+
 }
+

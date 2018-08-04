@@ -1802,7 +1802,7 @@ html {
   line-height: 72px;
   font-weight: bold;
   color: #fff;
-  padding-bottom: 60px;
+  padding-bottom: 160px;
   width: 600px;
 }
 
@@ -1921,6 +1921,59 @@ html {
 
 .paginator-btn:focus {
   outline: none;
+}
+
+.paginator-btn:hover {
+  background-color: #4da1ff;
+  color: #fff;
+}
+
+.paginator .page-item:not(:last-of-type) {
+  margin-right: 4px;
+}
+
+.paginator .page-item .page-link {
+  border-radius: 5px;
+  color: #4da1ff;
+  border: 1px solid #4da1ff;
+  background: transparent;
+}
+
+.paginator .page-item .page-link:focus {
+  box-shadow: none;
+}
+
+.paginator .page-item .page-link-hov:hover {
+  background-color: #4da1ff;
+  color: #fff;
+}
+
+.paginator .dots .page-link {
+  border: none;
+  background: transparent;
+}
+
+.paginator .page-item .arrow {
+  border: none;
+  background: transparent;
+}
+
+.paginator .page-item:first-of-type .page-link {
+  padding: 5px 0 0 0;
+}
+
+.paginator .page-item:last-of-type .page-link {
+  padding: 5px 0 0 0;
+}
+
+.paginator .arrow-first {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.paginator .arrow-second {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .row {
@@ -3448,7 +3501,9 @@ html {
   }
 
   .hero-title {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+    font-size: 40px;
+    line-height: 46px;
     width: 550px;
   }
 }
