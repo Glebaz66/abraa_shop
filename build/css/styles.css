@@ -1674,6 +1674,70 @@ html {
   height: 100%;
 }
 
+.categories-wrp .card {
+  width: 350px;
+}
+
+.categories-wrp .card-img-top {
+  margin-bottom: 20px;
+}
+
+.categories-wrp .card-title {
+  font-size: 14px;
+  line-height: 20px;
+  color: #969696;
+  font-family: "Muli";
+  font-weight: bold;
+  text-align: left;
+}
+
+.categories-wrp .card-body {
+  padding: 0;
+}
+
+.categories-wrp .card-text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #3e4352;
+  font-family: "Muli";
+  text-align: left;
+  font-weight: 800;
+}
+
+.categories-wrp .card-text-secondary {
+  font-size: 11px;
+  line-height: 16px;
+  color: #848996;
+  font-family: "Muli";
+  text-align: left;
+  font-weight: 800;
+}
+
+.categories-wrp .card-rating {
+  display: flex;
+  height: 30px;
+}
+
+.categories-wrp .card-rating-img {
+  margin-right: 10px;
+}
+
+.categories-wrp .card-rating-count {
+  font-size: 11px;
+  line-height: 30px;
+  color: #8d93a3;
+  font-family: "Muli";
+  font-weight: bold;
+}
+
+.categories-wrp .card-country {
+  display: flex;
+}
+
+.categories-wrp .card-country-img {
+  margin-right: 10px;
+}
+
 .wrapper-main-hero {
   padding: 0;
 }
