@@ -1,146 +1,158 @@
-.container__label {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 14px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .container__label input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container__label:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container__label input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container__label input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container__label .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-.filter {
-  text-align: left;
-}
-.category__list {
-    list-style: none;
-    vertical-align: middle;
+.categories-wrp {
+  background: $color-main-grey;
+  .wrapper {
+    max-width: 1400px;
+    margin: auto;
 
-    &__item:nth-last-of-type(n+2) {
-        margin-bottom: 15px;
-    }
-}
+    .container {
+      .row {
+        display: flex;
+        flex-direction: column;
 
-.category__tabs {
-  background-color: #f3f5f8;
-  display: flex;
-}
-.card {
-  border-left: 2px solid #e9ecf0;
+        .category {
+          min-height: 200px;
+          background: #f9fbfc;
+          float: left;
+          order: 2;
+          margin-bottom: 1rem;
+          padding-left: 2rem;
+          padding-right: 1.5rem;
 
-  &:first-of-type {
-    border-left: 2px solid transparent;
-  }
+          h3, h4 {
+            text-transform: uppercase;
+            padding: 1rem 0;
+          }
 
-  &__post {
-    background-color: #fff;
-    padding: 40px 15px 20px;
-  }
+          h5 {
+            padding: 1rem 0;
+          }
+          .carrency-range input {
+              width: 55px;
+              height: 30px;
+              margin: 0 .25rem;
+          }
+         /* .control {
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            font-size: 18px;
+          }
 
-  &-img-top {
-    padding-bottom: 15px;
-    width: 100%;
-  }
+          input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+          }
 
-  .card-body {
-    text-align: left;
+          .control__indicator {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background: $color--light-grey;
+          }
 
-    .card-title {
-      margin-bottom: 10px;
-      font-size: 14px;
-      font-weight: 700;
-      color: #718091;
-    }
+          .control:hover input,
+          .control input:focus {
+            background: $color--grey;
+          }
 
-    .card-text {
-      font-size: 16px;
-      font-weight: 700;
-      color: #252833;
-    }
+          .control input:checked {
+            background: $color--primary;
+          }
 
-    .card-text-secondary {
-      font-size: 11px;
-      font-weight: 500;
+          .control:hover input:not([disabled]):checked,
+          .control input:checked:focus {
+            background: $color--secondary;
+          }
 
-    }
-    
-    .card__btn {
-      display: inline-block;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      height: 35px;
-      line-height: 35px;
-      text-align: center;
-      text-decoration: none;
-      color: #4382f9;
-      font-weight: 600;
-      text-transform: uppercase;
-      border: 1px solid #4382f9;
-      border-radius: 3px;
-      transition-duration: 100ms;
+          .control input:disabled {
+            background: $color--light-grey;
+            opacity: 0.6;
+            pointer-events: none;
+            &:after {
+              content: "";
+              position: absolute;
+              display: none;
+            }
+            .control input:checked {
+              display: block;
+            }
+            .control--checkbox {
+              left: 8px;
+              top: 4px;
+              width: 3px;
+              height: 8px;
+              border: solid $color--white;
+              border-width: 0 2px 2px 0;
+              transform: rotate(45deg);
+            }
+            .control--checkbox input:disabled {
+              border-color: $color--dark-grey;
+            }
+            
+          }  */
+        }
 
-      &:hover {
-        color: #fff;
-        background-color: #4382f9;
+        .category__header {
+          min-height: 50px;
+          // background: #558;
+          float: right;
+          margin-bottom: 1rem;
+          order: 1;
+        }
+
+        .category__main {
+          min-height: 350px;
+          // background: #833;
+          order: 3;
+        }
+
+        .hide {
+          position: absolute;
+          top: -2000px;
+          height: 0;
+          overflow: hidden;
+        }
+
+        .show {
+          top: 0;
+          height: 100%;
+        }
       }
     }
   }
 }
 
-.category__list {
-  padding: 0;
+@media (min-width: 662px) {
+  .categories-wrp {
+    .wrapper {
+      .container {
+        .row {
+          display: block;
+        }
+        .category {
+          width: 276px;
+          float: left;
+        }
+        .category__main {
+          width: calc(100% - 276px - 6px);
+          float: right;
+        }
+        .category__header {
+          width: calc(100% - 276px - 6px);
+          float: right;
+        }
+        .hide {
+          width: 0;
+        }
+        .show {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

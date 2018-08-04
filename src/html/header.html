@@ -1,57 +1,146 @@
-  <div class="container">
-      <div class="row">
-        <div class="col-12">
-            <header class="header">
-              <div class="col-2">
-                <div class="nav">
-                  <div class="menu"></div>
-                  <div class="logo">
-                    <img src="./img/-e-logo.png" alt="logo">
-                  </div>
+<!-- <div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div id="content">
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <a class="navbar-brand" href="#">
+            <img src="img/-e-logo.png" alt="Abraa">
+          </a>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Products</span>
+            </div>
+            <textarea class="form-control resize-none" aria-label="With textarea" placeholder="Search goods, suppliers and create your request…"></textarea>
+          </div>
+          <div class="collapse navbar-collapse ml-5 lh justify-content-between">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <img src="img/icon-add.png" alt="icon-add"> New RFQ
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <img src="img/icon-avatar.png" alt="icon-avatar">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-              </div>
-              <div class="col-6">
-                <div class="search-bar">
-                  <div class="search-bar-dropdown">
-                    <p class="search-bar-dropdown-title">Products</p>
-                    <ul class="search-bar-dropdown-list">
-                      <li class="search-bar-dropdown-list-item"></li>
-                      <li class="search-bar-dropdown-list-item"></li>
-                    </ul>
-                    <input type="text" placeholder="Search goods, suppliers and create your request…">
-                    <div class="search-bar-icon"></div>
-                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  ENG
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">eng</a>
+                  <a class="dropdown-item" href="#">العربية</a>
                 </div>
-              </div>
-              <div class="col-2">
-                <div class="new-rfq">
-                  <div class="new-rfq-button"></div>
-                  <div class="new-rfq-title">New RFQ</div>
-                </div>
-              </div>
-              <div class="col-1">
-                <div class="profile">
-                  <div class="profile-avatar"></div>
-                    <ul class="profile-avatar-list">
-                      <li class="profile-avatar-list-item"></li>
-                      <li class="profile-avatar-list-item"></li>
-                      <li class="profile-avatar-list-item"></li>
-                      <li class="profile-avatar-list-item"></li>
-                      <li class="profile-avatar-list-item"></li>
-                      <li class="profile-avatar-list-item"></li>
-                    </ul>
-                </div>
-              </div>
-              <div class="col-1">
-                <div class="lang">
-                  <div class="lang-current">eng</div>
-                  <ul class="lang-list">
-                    <li class="lang-list-item">eng</li>
-                    <li class="lang-list-item">العربية</li>
-                  </ul>
-                </div>
-              </div>
-            </header>
-        </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     </div>
   </div>
+</div> -->
+
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol id="icon-search" viewBox="0 0 32 32">
+      <title>search</title>
+      <path d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
+    </symbol>
+    <symbol id="icon-user-solid-circle" viewBox="0 0 20 20">
+        <title>user-solid-circle</title>
+        <path d="M10 20c-5.523 0-10-4.477-10-10s4.477-10 10-10v0c5.523 0 10 4.477 10 10s-4.477 10-10 10v0zM7 6v2c0 1.657 1.343 3 3 3s3-1.343 3-3v0-2c0-1.657-1.343-3-3-3s-3 1.343-3 3v0zM3.35 14.44c1.456 2.155 3.89 3.553 6.65 3.553s5.194-1.398 6.632-3.525l0.018-0.028c-1.951-0.918-4.238-1.453-6.65-1.453s-4.699 0.536-6.748 1.495l0.098-0.041z"></path>
+        </symbol>
+  </defs>
+</svg>
+
+
+<div class="container-fluid">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="content">
+          <button type="button" id="sidebarCollapse" class="navbar-btn ">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="logo-wrp">
+          <a class="" href="#">
+            <img src="img/-e-logo.png" alt="Abraa" width="130" height="39">
+          </a>
+        </div>
+        <div class="input-group input-group--header">
+          <div class="input-group-prepend">
+            <!-- btn-outline-secondary -->
+            <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search goods, suppliers and create your request...">
+          <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+        </div>
+        <div class="rfq-btn">
+          <button>+</button>
+          <span>NewRFQ</span>
+        </div>
+        <!--           select option -->
+        <div class="header-choose-forms d-flex justify-content-end">
+
+          <form>
+            <div class="form-row align-items-center">
+              <div class="col-auto my-1">
+                <svg class="icon icon-user-solid-circle"><use xlink:href="#icon-user-solid-circle"></use></svg>
+                <select class="custom-select mr-sm-2" id="chooseCurrency">
+                  <option selected></option>
+                  <option value="1">€</option>
+                  <option value="2">£</option>
+                  <option value="3">¥</option>
+                </select>
+              </div>
+
+            </div>
+          </form>
+          <form>
+            <div class="form-row align-items-center">
+              <div class="col-auto my-1">
+                <select class="custom-select mr-sm-2" id="chooseLanguge">
+                  <option selected>En</option>
+                  <option value="1">Fr</option>
+                  <option value="2">De</option>
+                  <option value="3">Es</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- select option end  -->
+    </div>
+  </div>
+</div>
+</div>

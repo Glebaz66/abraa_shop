@@ -4,13 +4,15 @@
 @import "fonts";
 @import 'normalize';
 @import 'bootstrap-grid.min';
+@import "common";
 @import 'header';
 @import 'footer';
 @import 'categories';
 @import 'hero';
+@import 'camera-colections';
 
 .row {
-width: 100%;
-text-align: center; 
-margin-left: 0;
+  width: 100%;
+  text-align: center; 
+  margin-left: 0;
 }
