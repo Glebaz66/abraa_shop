@@ -1,146 +1,9 @@
-// header {
-//     background-color: #fff;
-//     height: 65px;
-//     margin-top: 50px;
-//     align-items: center;
-//     width: 100%;
-// }
-// .navbar {
-//     padding: 0;
-// }
-// .navbar-expand-lg .navbar-toggler {
-//     display: block;
-// }
-// .navbar-light .navbar-toggler {
-//     border: none;
-// }
-// .input-group {
-//     width: 40%;
-// }
-// .input-group-text {
-//     font-family: 'Muli';
-//     font-size: 20px;
-// }
-// .navbar-brand > img {
-//     width: 80%;
-// }
-// .search-bar {
-//     position: relative;
-
-// }
-// .lh {
-//     line-height: 35px;
-// }
-// .navbar-expand-lg .navbar-nav .dropdown-menu {
-//     top: 0;
-// }
-// .resize-none {
-//     resize: none;
-// }
-// .search-bar-dropdown {
-//     background-color: #4da1ff;
-//     line-height: 45px;
-//     border-radius: 2px;
-// }
-// .search-bar-dropdown-title {
-//     width: 70px;
-//     text-align: center;
-//     margin: 0;
-
-//     &::after {
-//         content: "";
-//         display: inline-block;
-//         width: 10px;
-//         border: 7px solid transparent;
-//         border-top: 7px solid white;
-//         position: absolute;
-//         top: 20px;
-//         left: 68px;
-//     }
-// }
-// .search-bar-dropdown > input {
-//     height: 43px;
-//     width: calc(100% - 87px);
-//     position: absolute;
-//     top: 1px;
-//     right: 0;
-// }
-// .search-bar-icon {
-//     width: 25px;
-//     height: 25px;
-//     background-image: url(../img/icon-search.png);
-//     position: absolute;
-//     top: 10px;
-//     right: 5px;
-// }
-// .search-bar-dropdown-list {
-//     display: none;
-// }
-
-// .new-rfq {
-//     display: flex;
-//     justify-content: start;
-//     align-items: center;
-
-//     &-button {
-//         background: url(../img/icon-add.png) no-repeat;
-//         width: 35px;
-//         height: 35px;
-//     }
-// }
-// .profile {
-//     position: relative;
-
-//     &-avatar {
-//         background: url(../img/icon-avatar.png) no-repeat;
-//         width: 42px;
-//         height: 42px;
-
-//         &::after {
-//             content: "";
-//             display: inline-block;
-//             width: 10px;
-//             border: 7px solid transparent;
-//             border-top: 7px solid #5d6475;
-//             position: absolute;
-//             top: 17px;
-//             right: 0;
-//         }
-//     }
-
-//     &-avatar-list {
-//         display: none;
-//     }
-// }
-// .lang {
-//     margin-right: 15px;
-//     position: relative;
-
-//     &-current {
-
-//         &::after {
-//             content: "";
-//             display: inline-block;
-//             width: 10px;
-//             border: 7px solid transparent;
-//             border-top: 7px solid #5d6475;
-//             position: absolute;
-//             top: 7px;
-//             right: 0;
-//         }
-//     }
-
-//     &-list {
-//         display: none;
-//     }
-// }
-
 /*  --------------  Button  --------------------- */
+
 #content {
   height: 4rem;
   display: flex;
   align-items: center;
-  margin-right: 1.5rem;
 }
 #sidebarCollapse {
   width: 40px;
@@ -148,7 +11,6 @@
   background: transparent;
   border: none;
 }
-
 #sidebarCollapse span {
   width: 80%;
   height: 2px;
@@ -159,22 +21,18 @@
   transform: scale(0.5);
   transform-origin: center;
 }
-
 #sidebarCollapse span:first-of-type {
   /* rotate first one */
   transform: rotate(45deg) translate(2px, 2px);
 }
-
 #sidebarCollapse span:nth-of-type(2) {
   /* second one is not visible */
   opacity: 0;
 }
-
 #sidebarCollapse span:last-of-type {
   /* rotate third one */
   transform: rotate(-45deg) translate(1px, -1px);
 }
-
 #sidebarCollapse.active span {
   /* no rotation */
   transform: none;
@@ -182,124 +40,196 @@
   opacity: 1;
   margin: 5px auto;
 }
+// @media (max-width: 768px) {
+#sidebarCollapse span:first-of-type,
+#sidebarCollapse span:nth-of-type(2),
+#sidebarCollapse span:last-of-type {
+  transform: none;
+  opacity: 1;
+  margin: 5px auto;
+}
+// }
+/*  --------------  Button END--------------------- */
+/*  --------------  MOBILE FIRST --------------------- */
+.row--header {
+  flex-direction: row;
+  flex-wrap: wrap;
 
-@media (max-width: 768px) {
-  #sidebarCollapse span:first-of-type,
-  #sidebarCollapse span:nth-of-type(2),
-  #sidebarCollapse span:last-of-type {
-    transform: none;
-    opacity: 1;
-    margin: 5px auto;
+  #content {
+    width: 15%;
+    margin: 0;
+  }
+  /*   logo-wrp  */
+  .logo-wrp {
+    width: 25%;
+    padding: 1rem 0 0;
+    margin: 0;
+    box-sizing: border-box;
+    img {
+      width: 100px;
+      height: 30px;
+      display: block;
+    }
+  }
+  /*   logo-wrp  end */
+  /*   select        */
+  .header-choose-forms {
+    width: 60%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.75rem 0 0;
+    select {
+      border: none;
+    }
+    .header-choose-forms__currency {
+      display: none;
+    }
+    .header-choose-forms__people {
+      position: relative;
+
+      .icon-user-solid-circle {
+        position: absolute;
+        font-size: 20px;
+        top: 10px;
+        right: 60px;
+      }
+    }
+  }
+  /*   select end       */
+
+  /*   input       */
+  .input-group--header {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0.75rem 0;
+    position: relative;
+    .product-select {
+      border: 1px solid $color-blue;
+      background: $color-blue;
+      color: $color--white;
+      font-size: 14px;
+      font-family: "Muli", sans-serif;
+      letter-spacing: 1.2px;
+      display: block;
+      height: 46px;
+      width: 117px;
+    }
+    input {
+      border: 2px solid $color-blue;
+      display: block;
+      height: 46px;
+      position: relative;
+      &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $color--grey;
+      }
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $color--grey;
+      }
+      &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: $color--grey;
+      }
+      &:-moz-placeholder {
+        /* Firefox 18- */
+        color: $color--grey;
+      }
+    }
+    .icon-search {
+      font-size: 20px;
+      color: $color-blue;
+      position: absolute;
+      right: 10px;
+      top: 26px;
+    }
   }
 }
 
-/*  --------------  Button  End --------------------- */
-
-.wrapper {
-  max-width: 1400px;
-  margin: auto;
-
-  .container-fluid {
-    .row {
-      display: flex;
-      padding-left: 1rem;
-
-      .logo-wrp {
-        padding: 0.75rem;
-        margin-right: 106px;
-        img {
-          width: 130px;
-          height: 39px;
-          display: block;
-        }
-      }
-      .input-group--header {
-        width: 635px;
-        box-sizing: border-box;
-        padding: 0.75rem 0;
-        margin-right: 46px;
-        position: relative;
-        // z-index: 5;
-        button {
-          border: 1px solid $color-blue;
-          background: $color-blue;
-          color: $color--white;
-          font-size: 14px;
-          font-family: "Muli";
-          letter-spacing: 1.2px;
-          display: block;
-          height: 46px;
-          width: 117px;
-        }
-        input {
-          border: 2px solid $color-blue;
-          display: block;
-          height: 46px;
-          position: relative;
-          &::-webkit-input-placeholder {
-            /* Chrome/Opera/Safari */
-            color: $color--grey;
+/*  --------------  MOBILE END --------------------- */
+@media (min-width: 768px) {
+  .row--header {
+      flex-wrap: nowrap;
+    #content {
+      width: 5%;
+      margin: 0;
+      order: 1;
+    }
+    .logo-wrp {
+      width: 18%;
+      order: 2;
+    }
+    .header-choose-forms {
+        order: 5;
+        width: 16%;
+        .header-choose-forms__currency {
+            display: block;
           }
-          &::-moz-placeholder {
-            /* Firefox 19+ */
-            color: $color--grey;
-          }
-          &:-ms-input-placeholder {
-            /* IE 10+ */
-            color: $color--grey;
-          }
-          &:-moz-placeholder {
-            /* Firefox 18- */
-            color: $color--grey;
-          }
-        }
-          .icon-search {
-            font-size: 20px;
-            color: $color-blue;
-            position: absolute;
-            right: 10px;
-            top: 26px;
-          }
-
-      }
-      .rfq-btn {
-        width: 100px;
+    }
+    .input-group--header {
+      width: calc(46% - 1rem);
+      order: 3;
+    }
+    .rfq-btn {
+        order: 4;
         display: flex;
         align-items: center;
-        margin-right: 100px;
-        button {
-          padding: 0;
-          margin: 0;
-          display: block;
-          width: 24px;
-          height: 24px;
-          border-radius: 4px;
-          border: 2px solid $color-blue;
-          color: $color-blue;
-          background: transparent;
-          font-size: 12px;
-          line-height: 20px;
-          margin-right: 10px;
-        }
-        span {
-          font-size: 14px;
-          color: $color-blue;
-          font-family: "Muli";
-        }
+        margin: 0 1rem;
+      button {
+        padding: 0;
+        margin: 0;
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        border: 2px solid $color-blue;
+        color: $color-blue;
+        background: transparent;
+        font-size: 12px;
+        line-height: 20px;
+        margin-right: 10px;
       }
-      .header-choose-forms {
-          padding: 0.75rem 0;
-          display: flex;
-          justify-content: flex-end;
-          .custom-select {
-              border: none;
-          }
-          .icon-user-solid-circle {
-              position: absolute;
-              font-size: 20px;
-              top: 10px;
-              right: 60px;
-          }
+      span {
+        font-size: 14px;
+        color: $color-blue;
+        font-family: "Muli";
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .row--header {
+    padding-left: 1rem;
+    .logo-wrp {
+      padding: 0.75rem;
+      margin-right: 106px;
+      img {
+        width: 130px;
+        height: 39px;
+      }
+    }
+    .input-group--header {
+      width: 635px;
+      margin-right: 46px;
+    }
+    .rfq-btn {
+      width: 100px;
+      margin-right: 100px;
+    }
+    .header-choose-forms {
+      padding: 0.75rem 0;
+      display: flex;
+      justify-content: flex-end;
+      .custom-select {
+        border: none;
+      }
+      .icon-user-solid-circle {
+        position: absolute;
+        font-size: 20px;
+        top: 10px;
+        right: 60px;
       }
     }
   }

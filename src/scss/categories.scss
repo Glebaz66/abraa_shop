@@ -166,7 +166,11 @@
                 }
                 .arrow-down,
                 .arrow-up {
-                  color: #F8D6F4;
+                  // color: #F8D6F4;
+                  // color: #fb8684;
+                  color: salmon;
+                  font-size: 18px;
+                  font-weight: bold;
                 }
                 &:hover {
                   transform: scale(1.2);
