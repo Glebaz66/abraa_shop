@@ -1678,6 +1678,21 @@ html {
   width: 350px;
 }
 
+.categories-wrp .card-verify {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.categories-wrp .card-verify-icon {
+  margin-right: 6px;
+}
+
+.categories-wrp .card-verify-text {
+  font-size: 11px;
+  line-height: 27px;
+  color: #8d919f;
+}
+
 .categories-wrp .card-img-top {
   margin-bottom: 20px;
 }
@@ -1736,6 +1751,24 @@ html {
 
 .categories-wrp .card-country-img {
   margin-right: 10px;
+}
+
+.categories-wrp .card-country-name {
+  font-size: 12px;
+  line-height: 28px;
+  color: #8d919f;
+}
+
+.categories-wrp .card-btn {
+  padding: 3px 50px;
+  border: 1px solid #4da1ff;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.categories-wrp .card-btn-item:hover {
+  text-decoration: none;
+  color: #007bff;
 }
 
 .wrapper-main-hero {

@@ -127,61 +127,102 @@
   }
   .card {
     width: 350px;
-    
-  }
-  .card-img-top {
-    margin-bottom: 20px;
-  }
-  .card-title {
-    font-size: 14px;
-    line-height: 20px;
-    color: #969696;
-    font-family: "Muli";
-    font-weight: bold;
-    text-align: left;
-  }
-  .card-body {
-    padding: 0;
-  }
-  .card-text {
-    font-size: 12px;
-    line-height: 16px;
-    color: #3e4352;
-    font-family: "Muli";
-    text-align: left;
-    font-weight: 800;
-  }
-  .card-text-secondary {
-    font-size: 11px;
-    line-height: 16px;
-    color: #848996;
-    font-family: "Muli";
-    text-align: left;
-    font-weight: 800;
-  }
-  .card-rating {
-    display: flex;
-    height: 30px;
 
-    &-img {
-      margin-right: 10px;
+    &-verify {
+      display: flex;
+      justify-content: flex-end;
+
+      &-icon {
+        margin-right: 6px;
+      }
+
+      &-text {
+        font-size: 11px;
+        line-height: 27px;
+        color: #8d919f;
+      }
     }
-    &-count {
-      font-size: 11px;
-      line-height: 30px;
-      color: #8d93a3;
+    
+    &-img-top {
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      font-size: 14px;
+      line-height: 20px;
+      color: #969696;
       font-family: "Muli";
       font-weight: bold;
+      text-align: left;
+    }
+
+    &-body {
+      padding: 0;
+    }
+
+    &-text {
+      font-size: 12px;
+      line-height: 16px;
+      color: #3e4352;
+      font-family: "Muli";
+      text-align: left;
+      font-weight: 800;
+    }
+
+    &-text-secondary {
+      font-size: 11px;
+      line-height: 16px;
+      color: #848996;
+      font-family: "Muli";
+      text-align: left;
+      font-weight: 800;
+    }
+
+    &-rating {
+      display: flex;
+      height: 30px;
+
+      &-img {
+        margin-right: 10px;
+      }
+
+      &-count {
+        font-size: 11px;
+        line-height: 30px;
+        color: #8d93a3;
+        font-family: "Muli";
+        font-weight: bold;
+      }
+    }
+
+    &-country {
+      display: flex;
+      
+      &-img {
+        margin-right: 10px;
+      }
+
+      &-name {
+        font-size: 12px;
+        line-height: 28px;
+        color: #8d919f;
+      }
+    }
+    &-btn {
+      padding: 3px 50px;
+      border: 1px solid #4da1ff;
+      border-radius: 3px;
+      margin-bottom: 15px;
+
+      &-item {
+
+        &:hover {
+          text-decoration: none;
+          color: #007bff;
+        }
+      }
     }
   }
-  .card-country {
-    display: flex;
-    
-    &-img {
-      margin-right: 10px;
-    }
-  }
-  
 }
 
 @media (min-width: 662px) {
