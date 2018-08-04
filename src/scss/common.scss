@@ -1,0 +1,46 @@
+$color-footer-grey: #e9ecf0;
+$color-main-grey: #f3f5f8;
+$color-dark-grey: #858d9e;
+$color-blue: #4da1ff;
+$color-blue-hover: #1538ad;
+$color-green: #60c18c;
+$color-border-grey: #ccd2db;
+$color-comment: rgb(62, 67, 82);
+$color--white: #ffffff;
+$color--black: #000000;
+$color--light-grey: #e6e6e6;
+$color--grey: #cccccc;
+$color--dark-grey: #7b7b7b;
+$color--primary: #2aa1c0;
+$color--secondary: #0e647d;
+$color-bg-dot: #5D6475;
+
+
+
+.wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+.comment {
+  font-size: 10px;
+  color: $color-comment;
+  font-family: sans-serif;
+  text-align: right;
+}
+
+.bottom-grey-line {
+  border-bottom: 1px solid $color-border-grey;
+}
+
+.top-grey-line {
+  border-top: 1px solid $color-border-grey;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
