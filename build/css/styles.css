@@ -1679,6 +1679,13 @@ html {
   background-color: #858d9e;
 }
 
+.categories-wrp .wrapper .container-fluid .row .category__main .banner__wide {
+  height: 230px;
+  background: url(../img/banner_wide.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .categories-wrp .wrapper .container-fluid .row .hide {
   position: absolute;
   top: -2000px;
@@ -1807,6 +1814,7 @@ html {
 
 .hero .bread-crams {
   padding-left: 20px;
+  list-style: none;
 }
 
 .hero .bread-crams-item:first-of-type {
@@ -1823,7 +1831,6 @@ html {
 .hero .bread-crams-item:first-of-type:after {
   content: ">";
   position: relative;
-  color: #7b78e2;
   left: 6px;
   top: 1px;
 }
@@ -1924,9 +1931,8 @@ html {
 }
 
 .paginator {
-  outline: 1px solid green;
   padding-top: 45px;
-  width: 1160px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

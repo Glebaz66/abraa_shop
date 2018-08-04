@@ -13,6 +13,7 @@
 
     & .bread-crams {
         padding-left: 20px;
+        list-style: none;
     }
 
     & .bread-crams-item:first-of-type {
@@ -29,7 +30,7 @@
     & .bread-crams-item:first-of-type:after {
         content: ">";
         position: relative;
-        color: #7b78e2;
+        // color: #7b78e2;
         left: 6px;
         top: 1px;
     }

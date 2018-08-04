@@ -122,6 +122,13 @@
           .category__tabs--dark {
             background-color: #858d9e;
           }
+          
+          .banner__wide {
+            height: 230px;
+            background: url(../img/banner_wide.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
         }
 
         .hide {
