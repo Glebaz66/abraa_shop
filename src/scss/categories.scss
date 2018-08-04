@@ -119,6 +119,9 @@
         .category__main {
           min-height: 350px;
           order: 3;
+          .category__tabs--dark {
+            background-color: #858d9e;
+          }
         }
 
         .hide {
