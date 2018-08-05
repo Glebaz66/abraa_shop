@@ -162,15 +162,16 @@
       order: 2;
     }
     .header-choose-forms {
+      direction: ltr !important;
         order: 5;
         width: 16%;
         .custom-select {
           background: url(../img/black-triangle-sm.png);
           background-repeat: no-repeat;
-          background-position: 60% 60%;
+          background-position: 80% 60%;
           border: none;
           cursor: pointer;
-        }
+              }
         .header-choose-forms__currency {
             display: block;
           }

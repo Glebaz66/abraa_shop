@@ -1293,14 +1293,6 @@ html {
   fill: currentColor;
 }
 
-.rtl {
-  direction: rtl;
-}
-
-.rtl .dropdown-menu-right {
-  text-align: right;
-}
-
 /*  --------------  Button  --------------------- */
 
 #content {
@@ -3101,6 +3093,7 @@ html {
   }
 
   .row--header .header-choose-forms {
+    direction: ltr !important;
     order: 5;
     width: 16%;
   }
@@ -3108,7 +3101,7 @@ html {
   .row--header .header-choose-forms .custom-select {
     background: url(../img/black-triangle-sm.png);
     background-repeat: no-repeat;
-    background-position: 60% 60%;
+    background-position: 80% 60%;
     border: none;
     cursor: pointer;
   }
