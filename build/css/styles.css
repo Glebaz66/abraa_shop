@@ -1889,6 +1889,12 @@ html {
   margin-bottom: 15px;
 }
 
+.categories-wrp .card-btn-item {
+  padding: 3px 85px;
+  border: 1px solid #4da1ff;
+  border-radius: 3px;
+}
+
 .categories-wrp .card-btn-item:hover {
   text-decoration: none;
   color: #007bff;
