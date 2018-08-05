@@ -1805,14 +1805,12 @@ html {
   justify-content: flex-end;
 }
 
-.categories-wrp .card-verify-icon {
-  margin-right: 6px;
-}
-
 .categories-wrp .card-verify-text {
   font-size: 11px;
   line-height: 27px;
   color: #8d919f;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
 .categories-wrp .card-img-top {
@@ -1877,11 +1875,9 @@ html {
   height: 30px;
 }
 
-.categories-wrp .card-rating-img {
-  margin-right: 10px;
-}
-
 .categories-wrp .card-rating-count {
+  margin-right: 10px;
+  margin-left: 10px;
   font-size: 11px;
   line-height: 30px;
   color: #8d93a3;
@@ -1893,14 +1889,12 @@ html {
   display: flex;
 }
 
-.categories-wrp .card-country-img {
-  margin-right: 10px;
-}
-
 .categories-wrp .card-country-name {
   font-size: 12px;
   line-height: 28px;
   color: #8d919f;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .categories-wrp .card-btn {

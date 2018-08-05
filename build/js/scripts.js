@@ -47,7 +47,7 @@ function changeRTL() {
   if (strUser == "arab") {
     document.body.style.direction = "rtl";
   } else if (strUser === "en") {
-    document.body.style.direction = "";
+    document.body.style.direction = "ltr";
     btnRTL.document.querySelectorAll('option')[1].selected = '';
     btnRTL.document.querySelectorAll('option')[0].selected = 'selected';
   }

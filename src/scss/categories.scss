@@ -242,14 +242,12 @@
       display: flex;
       justify-content: flex-end;
 
-      &-icon {
-        margin-right: 6px;
-      }
-
       &-text {
         font-size: 11px;
         line-height: 27px;
         color: #8d919f;
+        margin-right: 6px;
+        margin-left: 6px;
       }
     }
 
@@ -312,12 +310,10 @@
     &-rating {
       display: flex;
       height: 30px;
-
-      &-img {
-        margin-right: 10px;
-      }
-
+      
       &-count {
+        margin-right: 10px;
+        margin-left: 10px;
         font-size: 11px;
         line-height: 30px;
         color: #8d93a3;
@@ -328,15 +324,12 @@
 
     &-country {
       display: flex;
-
-      &-img {
-        margin-right: 10px;
-      }
-
       &-name {
         font-size: 12px;
         line-height: 28px;
         color: #8d919f;
+        margin-left: 10px;
+        margin-right: 10px;
       }
     }
     &-btn {
@@ -391,7 +384,6 @@
     direction: ltr !important;
     input {
       direction: ltr !important;
-      
     }
   }
 .category__block .checkbox-txt-after::after {
