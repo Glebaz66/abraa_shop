@@ -1909,7 +1909,7 @@ html {
 }
 
 .categories-wrp .card-btn-item {
-  padding: 3px 85px;
+  display: block;
   border: 1px solid #4da1ff;
   border-radius: 3px;
   background: #fff;
