@@ -2073,6 +2073,10 @@ html {
   transform: rotate(90deg);
 }
 
+.pagination {
+  justify-content: center;
+}
+
 .row {
   width: 100%;
   text-align: center;
