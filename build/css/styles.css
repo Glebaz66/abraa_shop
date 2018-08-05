@@ -2474,6 +2474,10 @@ html {
     float: right;
   }
 
+  .categories-wrp .wrapper .container-fluid .row .category__header .category__sort-controls {
+    display: none;
+  }
+
   .categories-wrp .wrapper .container-fluid .row .category__main {
     width: calc(100% - 276px - 6px);
     float: right;

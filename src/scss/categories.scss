@@ -379,6 +379,9 @@
           .category__header {
             width: calc(100% - 276px - 6px);
             float: right;
+            .category__sort-controls {
+              display: none;
+            }
           }
           .category__main {
             width: calc(100% - 276px - 6px);
