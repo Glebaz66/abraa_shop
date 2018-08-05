@@ -388,14 +388,14 @@
     }
   }
 
-// .category__block .checkbox-txt-after::after {
-//   content: "(360)";
-//   position: relative;
-//   font-size: 14px;
-//   left: 70px;
-//   top: -3px;
-//   color: #b8bbc1;
-// }
+.category__block .checkbox-txt-after::after {
+  content: "(360)";
+  position: relative;
+  font-size: 14px;
+  left: 70px;
+  top: -3px;
+  color: #b8bbc1;
+}
 
 
 .checkbox:checked + .checkbox-custom::before {
