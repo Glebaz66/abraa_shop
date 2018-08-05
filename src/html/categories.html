@@ -108,19 +108,21 @@
                                 <input type="checkbox" checked="checked" name="fifth__group" /> Choice
                             </label>
                         </form>
-                        <div class="">
-                            <form class=" carrency-range d-flex justify-content-end">
-                                <span class=""> $ </span>
-                                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-                                <span class="px-1">to</span>
-                                <span class=""> $ </span>
-                                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-                            </form>
-                        </div>
+                    </div>
+                    <div class="category__block">
+                        <!-- <div class=""> -->
+                        <form class=" carrency-range d-flex justify-content-end">
+                            <span class=""> $ </span>
+                            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                            <span class="px-1">to</span>
+                            <span class=""> $ </span>
+                            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        </form>
+                        <!-- </div> -->
                     </div>
                 </div>
                 <div class="category__header clearfix">
-                    <div class="row justify-content-end">
+                    <div class="row justify-content-center justify-content-md-end">
                         <div class="category__sort-dot">
                             <span class="sort-dot__dot"></span>
                             <span class="sort-dot__dot"></span>
@@ -143,6 +145,25 @@
                             </button>
                             <button class="sort-forms__btn" id="sort-latest">Latest</button>
                         </div>
+                        <div class="category__sort-controls">
+                            <button class="category__sort-res">Digital SLRs
+                                <span class="white-x">⛒</span>
+                            </button>
+                            <button class="category__sort-res">Nikkon
+                                <span class="white-x">⛒</span>
+                            </button>
+                            <button class="category__sort-res">Cannon
+                                <span class="white-x">⛒</span>
+                            </button>
+                            <div>
+                                <button class="category__sort-clear">clear all filters
+                                    <span class="black-x">⛒</span>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="category__sort-show" id="category__sort-show">hide filters</button>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -153,55 +174,7 @@
                         <!-- ROW 1 -->
                         <div class="row">
                             <div class="category__tabs d-flex">
-                                <!-- <div class="card col-xs-6 col-md-4 col-lg-3">
-                                            <div class="card__post">
-                                                <img class="card-img-top" src="./img/photo.png" alt="Card image cap">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">F10-535- 2015 condenser</h5>
-                                                    <p class="card-text">$ 200-320/Piece</p>
-                                                    <p class="card-text-secondary">Min. 10 pieces</p>
-                                                    <a href="#" class="card__btn">Add</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card col-xs-6 col-md-4 col-lg-3">
-                                            <div class="card__post">
-                                                <img class="card-img-top" src="./img/photo.png" alt="Card image cap">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">F10-535- 2015 condenser</h5>
-                                                    <p class="card-text">$ 200-320/Piece</p>
-                                                    <p class="card-text-secondary">Min. 10 pieces</p>
-                                                    <a href="#" class="card__btn">Add</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card col-xs-6 col-md-4 col-lg-3">
-                                            <div class="card__post">
-                                                <img class="card-img-top" src="./img/photo.png" alt="Card image cap">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">F10-535- 2015 condenser</h5>
-                                                    <p class="card-text">$ 200-320/Piece</p>
-                                                    <p class="card-text-secondary">Min. 10 pieces</p>
-                                                    <a href="#" class="card__btn">Add</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card col-xs-6 col-md-4 col-lg-3">
-                                            <div class="card__post">
-                                                <img class="card-img-top" src="./img/photo.png" alt="Card image cap">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">F10-535- 2015 condenser</h5>
-                                                    <p class="card-text">$ 200-320/Piece</p>
-                                                    <p class="card-text-secondary">Min. 10 pieces</p>
-                                                    <a href="#" class="card__btn">Add</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
-
-                                <!--                     ========================================================            -->
-
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -232,7 +205,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -263,7 +236,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -294,7 +267,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -338,7 +311,7 @@
                         <!-- ROW 2  -->
                         <div class="row">
                             <div class="category__tabs d-flex">
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -369,7 +342,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -400,7 +373,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -431,7 +404,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -469,7 +442,7 @@
                         <!-- ROW 3 -->
                         <div class="row">
                             <div class="category__tabs d-flex">
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -500,7 +473,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -531,7 +504,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -562,7 +535,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -659,7 +632,7 @@
                             </div>
                             <!-- header end -->
                             <div class="category__tabs d-flex">
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -690,7 +663,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -721,7 +694,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -752,7 +725,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card col-xs-6 col-md-4 col-lg-3 mr-3 mt-3">
+                                <div class="card">
                                     <div class="card__post">
                                         <div class="card-verify">
                                             <div class="card-verify-icon">
@@ -793,3 +766,4 @@
         </div>
     </div>
 </div>
+<div class="button-up">⌃</div>
