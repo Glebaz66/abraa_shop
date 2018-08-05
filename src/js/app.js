@@ -27,9 +27,12 @@ function changeRTLfooter () {
   const strUser = btnRTLfoot.options[btnRTLfoot.selectedIndex].value;
   if ( strUser == "arab") {
     document.body.style.direction = "rtl";
+    console.log(btnRTL.document.querySelectorAll('option')[1]);
+    
     btnRTL.document.querySelectorAll('option')[1].selected = ''
     btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
   } else if (strUser === "en") {
+    console.log(btnRTL.document.querySelectorAll('option')[1]);
     document.body.style.direction = "";
     btnRTL.document.querySelectorAll('option')[1].selected = ''
     btnRTL.document.querySelectorAll('option')[0].selected = 'selected'

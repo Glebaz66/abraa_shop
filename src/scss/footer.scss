@@ -62,15 +62,8 @@
     text-align: left;
     list-style: none;
     align-items: center;
-  
-    &__item:nth-last-of-type(n + 2) {
-      margin-right: 10px;
+    &__item {
+      margin: 0 5px;
     }
+ 
   }
-  // .link__blue {
-  //     color: $color-blue;
-  //     &:hover {
-  //         color: $color-blue-hover;
-  //     }
-  // }
-  

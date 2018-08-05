@@ -1534,8 +1534,8 @@ html {
   align-items: center;
 }
 
-.footer__sublist__item:nth-last-of-type(n + 2) {
-  margin-right: 10px;
+.footer__sublist__item {
+  margin: 0 5px;
 }
 
 .categories-wrp {
