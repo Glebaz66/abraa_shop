@@ -40,6 +40,17 @@
           height: 30px;
           margin: 0 0.25rem;
         }
+        &__title {
+          font-weight: 900;
+          font-size: 14px;
+          font-family: 'Muli';
+        }
+        &__name {
+          font-family: 'Muli';
+          font-size: 14px;
+          line-height: 20px;
+        }
+
       }
 
       .category__header {
