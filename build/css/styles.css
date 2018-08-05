@@ -1882,16 +1882,31 @@ html {
 }
 
 .categories-wrp .card-btn {
-  padding: 3px 50px;
+  margin-bottom: 15px;
+}
+
+.categories-wrp .card-btn-item {
+  padding: 3px 86px;
   border: 1px solid #4da1ff;
   border-radius: 3px;
-  margin-bottom: 15px;
 }
 
 .categories-wrp .card-btn-item:hover {
   text-decoration: none;
-  color: #007bff;
+  color: #fff;
+  background-color: #4da1ff;
 }
+
+.category__block input[type=checkbox]::after {
+  content: '(360)';
+  position: relative;
+  font-size: 14px;
+  left: 70px;
+  top: -3px;
+  color: #b8bbc1;
+}
+
+/*   UP  */
 
 .button-up {
   width: 62px;
@@ -3789,7 +3804,11 @@ html {
   }
 
   .category__tabs--dark {
-    padding: 1rem;
+    padding: 1rem 1rem 3.5rem;
+  }
+
+  .recommended {
+    padding: 2rem 1rem;
   }
 }
 
