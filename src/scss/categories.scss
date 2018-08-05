@@ -17,8 +17,7 @@
         min-height: 200px;
         background: #f9fbfc;
         text-align: left;
-        // width: 100%;
-        // float: left;
+        font-family: 'Muli';
         order: 2;
         margin-bottom: 1rem;
         padding-left: 2rem;
@@ -39,6 +38,22 @@
           width: 55px;
           height: 30px;
           margin: 0 0.25rem;
+        }
+        &__title {
+          font-weight: 900;
+          font-size: 14px;
+          font-family: 'Muli';
+        }
+        &__name {
+          font-family: 'Muli';
+          font-size: 15px;
+          line-height: 20px;
+          &::after {
+            content: " (+1000)";
+            display: inline;
+            color: #a7a7a7;
+            font-size: 14px;
+          }
         }
       }
 
