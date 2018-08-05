@@ -1802,7 +1802,8 @@ html {
   background-color: red;
   border-radius: 20px;
   position: absolute;
-  top: -2045px;
+  top: 0;
+  opacity: 0;
   left: 20px;
 }
 
@@ -1814,7 +1815,8 @@ html {
 
 .categories-wrp .card:hover .card-sales {
   top: 45px;
-  transition: top 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 1;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .categories-wrp .card-title {
@@ -3767,15 +3769,27 @@ html {
     right: 60px;
   }
 
-  .categories-wrp .container-fluid .row .category__main .category__tabs {
+  .categories-wrp
+.container-fluid
+.row
+.category__main
+.category__tabs {
     flex-wrap: none;
     justify-content: space-between;
   }
 
-  .categories-wrp .container-fluid .row .category__main .category__tabs .card {
+  .categories-wrp
+.container-fluid
+.row
+.category__main
+.category__tabs .card {
     min-width: 180px;
     max-width: calc(25% - 1rem);
     margin-left: 0.5rem;
+  }
+
+  .category__tabs--dark {
+    padding: 1rem;
   }
 }
 
