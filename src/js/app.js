@@ -1,4 +1,5 @@
 const btnWrpHeader = document.getElementById("content");
+const btnRTL = document.getElementById("chooseLangugeHeader");
 const rfqBtn = document.querySelector(".rfq-btn");
 const rfqWrp = document.querySelector(".rfq-wrapper");
 const btnWrp = document.getElementById("category__sort-show");
@@ -16,7 +17,20 @@ btnWrp.addEventListener("click", hide, false);
 btnWrpHeader.addEventListener("click", hide, false);
 rfqBtn.addEventListener("click", setWfqWindow, false);
 rfqSbt.addEventListener("click", getWfqWindow, false);
+btnRTL.addEventListener("click", changeRTL, false);
 
+function changeRTL () {
+  console.log('ok')
+  const strUser = btnRTL.options[btnRTL.selectedIndex].value;
+  console.log(strUser === "arab")
+  if ( strUser == "arab") {
+    console.log("strUser =" + strUser)
+    document.body.style.direction = "rtl";
+    console.log("rtl = " + document.body.style.direction)
+  } else if (strUser === "en") {
+    document.body.style.direction = "";
+  }
+}
 
 function setWfqWindow (e) {
   e.preventDefault();

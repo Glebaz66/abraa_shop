@@ -1,6 +1,7 @@
 "use strict";
 
 var btnWrpHeader = document.getElementById("content");
+var btnRTL = document.getElementById("chooseLangugeHeader");
 var rfqBtn = document.querySelector(".rfq-btn");
 var rfqWrp = document.querySelector(".rfq-wrapper");
 var btnWrp = document.getElementById("category__sort-show");
@@ -18,6 +19,20 @@ btnWrp.addEventListener("click", hide, false);
 btnWrpHeader.addEventListener("click", hide, false);
 rfqBtn.addEventListener("click", setWfqWindow, false);
 rfqSbt.addEventListener("click", getWfqWindow, false);
+btnRTL.addEventListener("click", changeRTL, false);
+
+function changeRTL() {
+  console.log('ok');
+  var strUser = btnRTL.options[btnRTL.selectedIndex].value;
+  console.log(strUser === "arab");
+  if (strUser == "arab") {
+    console.log("strUser =" + strUser);
+    document.body.style.direction = "rtl";
+    console.log("rtl = " + document.body.style.direction);
+  } else if (strUser === "en") {
+    document.body.style.direction = "";
+  }
+}
 
 function setWfqWindow(e) {
   e.preventDefault();
