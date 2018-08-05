@@ -331,6 +331,9 @@
       margin-bottom: 15px;
 
       &-item {
+        padding: 3px 85px;
+        border: 1px solid #4da1ff;
+        border-radius: 3px;
         &:hover {
           text-decoration: none;
           color: #007bff;
