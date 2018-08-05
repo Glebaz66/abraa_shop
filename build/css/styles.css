@@ -1891,11 +1891,47 @@ html {
   display: block;
   border: 1px solid #4da1ff;
   border-radius: 3px;
+  background: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .categories-wrp .card-btn-item:hover {
   text-decoration: none;
-  color: #007bff;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-banner {
+  background: #333 url(../img/card-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-banner .card-banner-text {
+  margin-top: 70%;
+}
+
+.card-banner .card-banner-text h2 {
+  color: #fff;
+  font-size: 36px;
+  font-family: "Lucida Grande", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.card-banner .card-btn-item {
+  background: #4da1ff;
+  color: #fff;
+}
+
+.card-banner .card-btn-item:hover {
+  background: #fff;
+  color: #4da1ff;
 }
 
 .category__block .checkbox-txt-after::after {
