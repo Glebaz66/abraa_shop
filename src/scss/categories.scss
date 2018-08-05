@@ -325,13 +325,11 @@
       }
     }
     &-btn {
-      padding: 3px 50px;
-      border: 1px solid #4da1ff;
+      margin: auto 1rem;
       border-radius: 3px;
-      margin-bottom: 15px;
 
       &-item {
-        padding: 3px 85px;
+        display: block;
         border: 1px solid #4da1ff;
         border-radius: 3px;
         &:hover {
