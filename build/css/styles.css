@@ -1883,10 +1883,14 @@ html {
 }
 
 .categories-wrp .card-btn {
-  padding: 3px 50px;
+  margin: auto 1rem;
+  border-radius: 3px;
+}
+
+.categories-wrp .card-btn-item {
+  display: block;
   border: 1px solid #4da1ff;
   border-radius: 3px;
-  margin-bottom: 15px;
 }
 
 .categories-wrp .card-btn-item:hover {
