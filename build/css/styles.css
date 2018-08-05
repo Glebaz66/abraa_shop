@@ -1888,17 +1888,7 @@ html {
 }
 
 .categories-wrp .card-btn-item {
-<<<<<<< HEAD
-  padding: 3px 85px;
-=======
   display: block;
->>>>>>> 04b0b0ad8a97b6928170211eab977140f7488332
-  border: 1px solid #4da1ff;
-  border-radius: 3px;
-}
-
-.categories-wrp .card-btn-item {
-  padding: 3px 85px;
   border: 1px solid #4da1ff;
   border-radius: 3px;
 }
