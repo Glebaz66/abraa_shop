@@ -2060,6 +2060,11 @@ html {
   margin: 0;
 }
 
+.wrapper-cameras .row {
+  margin: 0;
+  padding: 0;
+}
+
 .cameras {
   list-style: none;
   justify-content: center;
