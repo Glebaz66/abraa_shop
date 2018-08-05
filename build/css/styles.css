@@ -1882,6 +1882,11 @@ html {
   text-align: center;
 }
 
+.button-up a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .wrapper-main-hero {
   padding: 0;
 }
