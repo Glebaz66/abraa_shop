@@ -17,7 +17,7 @@
         min-height: 200px;
         background: #f9fbfc;
         text-align: left;
-        font-family: "Muli";
+        font-family: 'Muli';
         order: 2;
         margin-bottom: 1rem;
         padding-left: 2rem;
@@ -42,10 +42,10 @@
         &__title {
           font-weight: 900;
           font-size: 14px;
-          font-family: "Muli";
+          font-family: 'Muli';
         }
         &__name {
-          font-family: "Muli";
+          font-family: 'Muli';
           font-size: 15px;
           line-height: 20px;
           &::after {
@@ -361,70 +361,43 @@
   }
 }
 // .categories-wrp .container-fluid .row .category__main .category__tabs{
-.card-banner {
-  background: #333 url(../img/card-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  .card-banner-text {
-    margin-top: 70%;
-    h2 {
+  .card-banner{
+    background: #333 url(../img/card-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .card-banner-text {
+      margin-top: 70%;
+      h2 {
+        color: #fff;
+        font-size: 36px;
+        font-family: "Lucida Grande", sans-serif;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        text-align: left;
+        padding: 0 1rem;
+      }
+    }
+    .card-btn-item {
+      background:  $color-blue ;
       color: #fff;
-      font-size: 36px;
-      font-family: "Lucida Grande", sans-serif;
-      font-weight: bold;
-      letter-spacing: 1.2px;
-      text-align: left;
-      padding: 0 1rem;
+    }
+    .card-btn-item:hover {
+      background:  #fff ;
+      color: $color-blue;
     }
   }
-  .card-btn-item {
-    background: $color-blue;
-    color: #fff;
-  }
-  .card-btn-item:hover {
-    background: #fff;
-    color: $color-blue;
-  }
-}
 
-.category__block .checkbox-txt-after {
+.category__block .checkbox-txt-after::after {
+  content: "(360)";
   position: relative;
-  &::after {
-    content: "(360)";
-    font-size: 14px;
-    // left: 70px;
-    // top: -3px;
-    margin-left: 40px;
-    color: #b8bbc1;
-  }
+  font-size: 14px;
+  left: 70px;
+  top: -3px;
+  color: #b8bbc1;
+  // z-index: 100;
 }
-.checkbox {
-  display: none;
-}
-.checkbox-custom {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ccc;
-  border-radius: 3px;
-  background-color: #fff;
-  position: absolute;
-  left: -22px;
-  top: 0px;
-}
-.checkbox:checked + .checkbox-custom::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  bottom: 2px;
-  left: 2px;
-  background-image: url(../img/icon-checked.png);
-  background-size: contain;
-  border-radius: 2px;
-}
-
+// }
 @media (max-width: 528px) {
   .category__header {
     .category__sort-forms {
@@ -622,7 +595,6 @@
   font-size: 52px;
   border-radius: 50%;
   position: fixed;
-  z-index: 100;
   bottom: 10px;
   right: 10px;
   text-align: center;
