@@ -1898,6 +1898,15 @@ html {
   color: #007bff;
 }
 
+.category__block .checkbox-txt-after::after {
+  content: "(360)";
+  position: relative;
+  font-size: 14px;
+  left: 70px;
+  top: -3px;
+  color: #b8bbc1;
+}
+
 /*   UP  */
 
 .button-up {
