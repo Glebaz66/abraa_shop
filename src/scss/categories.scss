@@ -23,7 +23,7 @@
         margin-bottom: 1rem;
         padding-left: 2rem;
         padding-right: 1.5rem;
-        // transition: height 0.8s cubic-bezier(0.81, -0.33, 0.345, 1.375);
+        transition: all 0.8s cubic-bezier(0.81, -0.33, 0.345, 1.375);
 
         h3,
         h4 {
@@ -221,6 +221,7 @@
     max-width: 300px;
     margin: 0 0 0.5rem 0;
     padding: 1rem;
+    position: relative;
     &-verify {
       display: flex;
       justify-content: flex-end;
@@ -238,6 +239,25 @@
 
     &-img-top {
       margin-bottom: 20px;
+    }
+    &-sales {
+      width: 100px;
+      background-color: red;
+      border-radius: 20px;
+      position: absolute;
+      top: -2045px;
+      left: 20px;
+      // display: none;
+      & p {
+        line-height: 36px;
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+
+    &:hover .card-sales{
+      top: 45px;
+      transition: top 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     &-title {
@@ -386,13 +406,16 @@
           .category__main {
             width: calc(100% - 276px - 6px);
             float: right;
+            .wrapper-banner {
+              padding-left: 9px;
+            }
             .banner__wide {
               height: 230px;
               background: url(../img/banner_wide.png);
               background-repeat: no-repeat;
               background-size: cover;
-              // min-height: 230px;
               display: block;
+              margin-bottom: 10px;
               img {
                 display: block;
                 width: 100%;

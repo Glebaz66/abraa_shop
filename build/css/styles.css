@@ -1562,6 +1562,7 @@ html {
   margin-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 1.5rem;
+  transition: all 0.8s cubic-bezier(0.81, -0.33, 0.345, 1.375);
 }
 
 .categories-wrp .container-fluid .row .category h3,
@@ -1774,6 +1775,7 @@ html {
   max-width: 300px;
   margin: 0 0 0.5rem 0;
   padding: 1rem;
+  position: relative;
 }
 
 .categories-wrp .card-verify {
@@ -1793,6 +1795,26 @@ html {
 
 .categories-wrp .card-img-top {
   margin-bottom: 20px;
+}
+
+.categories-wrp .card-sales {
+  width: 100px;
+  background-color: red;
+  border-radius: 20px;
+  position: absolute;
+  top: -2045px;
+  left: 20px;
+}
+
+.categories-wrp .card-sales p {
+  line-height: 36px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.categories-wrp .card:hover .card-sales {
+  top: 45px;
+  transition: top 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .categories-wrp .card-title {
@@ -2483,12 +2505,17 @@ html {
     float: right;
   }
 
+  .categories-wrp .wrapper .container-fluid .row .category__main .wrapper-banner {
+    padding-left: 9px;
+  }
+
   .categories-wrp .wrapper .container-fluid .row .category__main .banner__wide {
     height: 230px;
     background: url(../img/banner_wide.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
+    margin-bottom: 10px;
   }
 
   .categories-wrp .wrapper .container-fluid .row .category__main .banner__wide img {
