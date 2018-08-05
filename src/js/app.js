@@ -8,6 +8,7 @@ const rfqSbt = document.getElementById("rfq-submit");
 const btn = document.getElementById("sidebarCollapse");
 const aside = document.querySelector(".categories-wrp .category");
 const card = document.querySelectorAll(".card");
+// const firGroup = document.querySelectorAll(".checkbox-txt-after");
 const header = document.querySelector(".categories-wrp .category__header");
 const main = document.querySelector(".categories-wrp .category__main");
 const placehold = document.querySelector(".placeholder-text-change");
@@ -27,13 +28,14 @@ function changeRTLfooter () {
   const strUser = btnRTLfoot.options[btnRTLfoot.selectedIndex].value;
   if ( strUser == "arab") {
     document.body.style.direction = "rtl";
+    // Array.from(firGroup, el => el.style.direction = "ltr")
     // console.log(btnRTL.document.querySelectorAll('option')[1]);
     
     // btnRTL.document.querySelectorAll('option')[1].selected = ''
     // btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
   } else  {
     // console.log(btnRTL.document.querySelectorAll('option')[1]);
-    document.body.style.direction = "";
+    document.body.style.direction = "ltr";
     // btnRTL.document.querySelectorAll('option')[1].selected = ''
     // btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
   }
@@ -92,3 +94,4 @@ function hide(e) {
     filter.textContent = "hide filters";
   }
 }
+

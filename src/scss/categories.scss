@@ -387,7 +387,13 @@
       color: $color-blue;
     }
   }
-
+  .checkbox-txt-after {
+    direction: ltr !important;
+    input {
+      direction: ltr !important;
+      
+    }
+  }
 .category__block .checkbox-txt-after::after {
   content: "(360)";
   position: relative;
@@ -395,7 +401,19 @@
   left: 70px;
   top: -3px;
   color: #b8bbc1;
+  direction: ltr !important;
 }
+// .rtl {
+//   direction: rtl;
+//   .category__block .checkbox-txt-after::after {
+//     content: ")360(";
+//     position: relative;
+//     font-size: 14px;
+//     left: 70px;
+//     top: -3px;
+//     color: #b8bbc1;
+//   }
+// }
 
 
 .checkbox:checked + .checkbox-custom::before {

@@ -1963,6 +1963,14 @@ html {
   color: #4da1ff;
 }
 
+.checkbox-txt-after {
+  direction: ltr !important;
+}
+
+.checkbox-txt-after input {
+  direction: ltr !important;
+}
+
 .category__block .checkbox-txt-after::after {
   content: "(360)";
   position: relative;
@@ -1970,6 +1978,7 @@ html {
   left: 70px;
   top: -3px;
   color: #b8bbc1;
+  direction: ltr !important;
 }
 
 .checkbox:checked + .checkbox-custom::before {
