@@ -44,3 +44,11 @@ $color-bg-dot: #5D6475;
   stroke: currentColor;
   fill: currentColor;
 }
+
+.rtl {
+  direction: rtl;
+}
+
+.rtl .dropdown-menu-right {
+  text-align: right;
+} 
