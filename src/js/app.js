@@ -1,5 +1,6 @@
 const btnWrpHeader = document.getElementById("content");
 const btnRTL = document.getElementById("chooseLangugeHeader");
+const btnRTLfoot = document.getElementById("chooseLangugeFooter");
 const rfqBtn = document.querySelector(".rfq-btn");
 const rfqWrp = document.querySelector(".rfq-wrapper");
 const btnWrp = document.getElementById("category__sort-show");
@@ -18,17 +19,31 @@ btnWrpHeader.addEventListener("click", hide, false);
 rfqBtn.addEventListener("click", setWfqWindow, false);
 rfqSbt.addEventListener("click", getWfqWindow, false);
 btnRTL.addEventListener("click", changeRTL, false);
+btnRTLfoot.addEventListener("click", changeRTLfooter, false);
 
-function changeRTL () {
-  console.log('ok')
-  const strUser = btnRTL.options[btnRTL.selectedIndex].value;
-  console.log(strUser === "arab")
+function changeRTLfooter () {
+  console.log("ok");
+  
+  const strUser = btnRTLfoot.options[btnRTLfoot.selectedIndex].value;
   if ( strUser == "arab") {
-    console.log("strUser =" + strUser)
     document.body.style.direction = "rtl";
-    console.log("rtl = " + document.body.style.direction)
+    btnRTL.document.querySelectorAll('option')[1].selected = ''
+    btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
   } else if (strUser === "en") {
     document.body.style.direction = "";
+    btnRTL.document.querySelectorAll('option')[1].selected = ''
+    btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
+  }
+
+}
+function changeRTL () {
+  const strUser = btnRTL.options[btnRTL.selectedIndex].value;
+  if ( strUser == "arab") {
+    document.body.style.direction = "rtl";
+  } else if (strUser === "en") {
+    document.body.style.direction = "";
+    btnRTL.document.querySelectorAll('option')[1].selected = ''
+    btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
   }
 }
 
