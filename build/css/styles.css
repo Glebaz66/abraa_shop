@@ -1955,13 +1955,43 @@ html {
   color: #4da1ff;
 }
 
+.category__block .checkbox-txt-after {
+  position: relative;
+}
+
 .category__block .checkbox-txt-after::after {
   content: "(360)";
-  position: relative;
   font-size: 14px;
-  left: 70px;
-  top: -3px;
+  margin-left: 40px;
   color: #b8bbc1;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: -22px;
+  top: 0px;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  background-image: url(../img/icon-checked.png);
+  background-size: contain;
+  border-radius: 2px;
 }
 
 /*   UP  */
