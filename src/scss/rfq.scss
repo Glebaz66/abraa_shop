@@ -1,0 +1,36 @@
+.rfq-wrapper {
+    min-width: 20rem;
+    min-height: 12rem;
+    max-width: 40rem;
+    max-height: 24rem;
+    margin: 2rem auto;
+    padding: 1.25rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 2px hsla(0,0%,0%, 0.3);
+
+    h6 {
+      text-transform: uppercase;
+    }
+    .rfq-input {
+      width: calc(30% - 1rem);
+      margin-right: 1rem;
+      label {
+        text-transform: capitalize;
+      }
+    }
+    .rfq-input:last-of-type {
+      margin-left: 1rem;
+    }
+  }
+
+  @media (min-width: 806px) { 
+    .rfq-wrapper {
+        position: absolute;
+        top: -4000px;
+        opacity: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+  }

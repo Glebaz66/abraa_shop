@@ -1,7 +1,10 @@
 "use strict";
 
 var btnWrpHeader = document.getElementById("content");
+var rfqBtn = document.querySelector(".rfq-btn");
+var rfqWrp = document.querySelector(".rfq-wrapper");
 var btnWrp = document.getElementById("category__sort-show");
+var rfqSbt = document.getElementById("rfq-submit");
 var btn = document.getElementById("sidebarCollapse");
 var aside = document.querySelector(".categories-wrp .category");
 var card = document.querySelectorAll(".card");
@@ -13,6 +16,19 @@ window.addEventListener("resize", setPlaceholder, false);
 
 btnWrp.addEventListener("click", hide, false);
 btnWrpHeader.addEventListener("click", hide, false);
+rfqBtn.addEventListener("click", setWfqWindow, false);
+rfqSbt.addEventListener("click", getWfqWindow, false);
+
+function setWfqWindow(e) {
+  e.preventDefault();
+  rfqWrp.style.top = "50%";
+  rfqWrp.style.opacity = "1";
+}
+function getWfqWindow(e) {
+  e.preventDefault();
+  rfqWrp.style.top = "-4000px";
+  rfqWrp.style.opacity = "0";
+}
 
 function setPlaceholder() {
   if (document.documentElement.clientWidth < 860) {

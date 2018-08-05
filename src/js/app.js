@@ -1,5 +1,8 @@
 const btnWrpHeader = document.getElementById("content");
+const rfqBtn = document.querySelector(".rfq-btn");
+const rfqWrp = document.querySelector(".rfq-wrapper");
 const btnWrp = document.getElementById("category__sort-show");
+const rfqSbt = document.getElementById("rfq-submit");
 const btn = document.getElementById("sidebarCollapse");
 const aside = document.querySelector(".categories-wrp .category");
 const card = document.querySelectorAll(".card");
@@ -11,6 +14,21 @@ window.addEventListener("resize", setPlaceholder, false);
 
 btnWrp.addEventListener("click", hide, false);
 btnWrpHeader.addEventListener("click", hide, false);
+rfqBtn.addEventListener("click", setWfqWindow, false);
+rfqSbt.addEventListener("click", getWfqWindow, false);
+
+
+function setWfqWindow (e) {
+  e.preventDefault();
+  rfqWrp.style.top = "50%";
+  rfqWrp.style.opacity = "1";
+}
+function getWfqWindow (e) {
+  e.preventDefault();
+  rfqWrp.style.top = "-4000px";
+  rfqWrp.style.opacity = "0";
+}
+
 
 function setPlaceholder() {
   if (document.documentElement.clientWidth < 860) {

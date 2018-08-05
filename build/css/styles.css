@@ -2108,6 +2108,35 @@ html {
   justify-content: center;
 }
 
+.rfq-wrapper {
+  min-width: 20rem;
+  min-height: 12rem;
+  max-width: 40rem;
+  max-height: 24rem;
+  margin: 2rem auto;
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.rfq-wrapper h6 {
+  text-transform: uppercase;
+}
+
+.rfq-wrapper .rfq-input {
+  width: calc(30% - 1rem);
+  margin-right: 1rem;
+}
+
+.rfq-wrapper .rfq-input label {
+  text-transform: capitalize;
+}
+
+.rfq-wrapper .rfq-input:last-of-type {
+  margin-left: 1rem;
+}
+
 .row {
   width: 100%;
   text-align: center;
@@ -3031,6 +3060,15 @@ html {
     min-width: 180px;
     max-width: calc(50% - 1rem);
     margin: 0.5rem;
+  }
+
+  .rfq-wrapper {
+    position: absolute;
+    top: -4000px;
+    opacity: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 
