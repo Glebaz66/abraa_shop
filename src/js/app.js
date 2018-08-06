@@ -8,15 +8,14 @@ const rfqSbt = document.getElementById("rfq-submit");
 const btn = document.getElementById("sidebarCollapse");
 const aside = document.querySelector(".categories-wrp .category");
 const card = document.querySelectorAll(".card");
-// const firGroup = document.querySelectorAll(".checkbox-txt-after");
 const header = document.querySelector(".categories-wrp .category__header");
 const main = document.querySelector(".categories-wrp .category__main");
 const placehold = document.querySelector(".placeholder-text-change");
 const filter = document.querySelector(".category__sort-show");
 window.addEventListener("resize", setPlaceholder, false);
 
-btnWrp.addEventListener("click", hide, false);
-btnWrpHeader.addEventListener("click", hide, false);
+// btnWrp.addEventListener("click", hide, false);
+// btnWrpHeader.addEventListener("click", hide, false);
 rfqBtn.addEventListener("click", setWfqWindow, false);
 rfqSbt.addEventListener("click", getWfqWindow, false);
 btnRTL.addEventListener("click", changeRTL, false);
@@ -47,8 +46,8 @@ function changeRTL () {
     document.body.style.direction = "rtl";
   } else if (strUser === "en") {
     document.body.style.direction = "ltr";
-    btnRTL.document.querySelectorAll('option')[1].selected = ''
-    btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
+    // btnRTL.document.querySelectorAll('option')[1].selected = ''
+    // btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
   }
 }
 
