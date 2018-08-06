@@ -17,7 +17,7 @@
         min-height: 200px;
         background: #f9fbfc;
         text-align: left;
-        font-family: 'Muli';
+        font-family: "Muli";
         order: 2;
         margin-bottom: 1rem;
         padding-left: 2rem;
@@ -42,10 +42,10 @@
         &__title {
           font-weight: 900;
           font-size: 14px;
-          font-family: 'Muli';
+          font-family: "Muli";
         }
         &__name {
-          font-family: 'Muli';
+          font-family: "Muli";
           font-size: 15px;
           line-height: 20px;
           &::after {
@@ -68,7 +68,7 @@
           flex-direction: row;
           flex-wrap: wrap;
           padding-top: 10px;
-          padding-left: .5rem;
+          padding-left: 0.5rem;
           margin: 0;
           // justify-content: flex-end;
           .category__sort-dot,
@@ -311,7 +311,7 @@
     &-rating {
       display: flex;
       height: 30px;
-      
+
       &-count {
         margin-right: 10px;
         margin-left: 10px;
@@ -355,38 +355,38 @@
   }
 }
 // .categories-wrp .container-fluid .row .category__main .category__tabs{
-  .card-banner{
-    background: #333 url(../img/card-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    .card-banner-text {
-      margin-top: 70%;
-      h2 {
-        color: #fff;
-        font-size: 36px;
-        font-family: "Lucida Grande", sans-serif;
-        font-weight: bold;
-        letter-spacing: 1.2px;
-        text-align: left;
-        padding: 0 1rem;
-      }
-    }
-    .card-btn-item {
-      background:  $color-blue ;
+.card-banner {
+  background: #333 url(../img/card-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .card-banner-text {
+    margin-top: 70%;
+    h2 {
       color: #fff;
-    }
-    .card-btn-item:hover {
-      background:  #fff ;
-      color: $color-blue;
+      font-size: 36px;
+      font-family: "Lucida Grande", sans-serif;
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      text-align: left;
+      padding: 0 1rem;
     }
   }
-  .checkbox-txt-after {
+  .card-btn-item {
+    background: $color-blue;
+    color: #fff;
+  }
+  .card-btn-item:hover {
+    background: #fff;
+    color: $color-blue;
+  }
+}
+.checkbox-txt-after {
+  direction: ltr !important;
+  input {
     direction: ltr !important;
-    input {
-      direction: ltr !important;
-    }
   }
+}
 .category__block .checkbox-txt-after::after {
   content: "(360)";
   position: relative;
@@ -396,7 +396,6 @@
   color: #b8bbc1;
   direction: ltr !important;
 }
-
 
 // .rtl {
 //   direction: rtl;
@@ -409,19 +408,91 @@
 //     color: #b8bbc1;
 //   }
 // }
-
-
-.checkbox:checked + .checkbox-custom::before {
-    content: "";
+@media (min-width: 662px) {
+  .categories-wrp .container-fluid .rtl {
     display: block;
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-image: url(../img/icon-checked.png);
-    background-size: contain;
-    border-radius: 2px;
-     width: 20px;
-    height: 20px;
+    // .rtl {
+      .category {
+        width: 276px;
+        float: right;
+        .category__block {
+          display: block;
+        }
+      }
+      .category__header {
+        width: calc(100% - 276px - 6px);
+            float: left;
+            .category__sort-controls {
+              display: none;
+            }
+      }
+      .category__main {
+        width: calc(100% - 276px - 6px);
+            float: left;
+            .wrapper-banner {
+              padding-left: 9px;
+            }
+            .banner__wide {
+              height: 230px;
+              background: url(../img/banner_wide.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              display: block;
+              margin-bottom: 10px;
+              img {
+                display: block;
+                width: 100%;
+                height: auto;
+              }
+            }
+            .recommended {
+              width: 100%;
+              padding-top: 1rem;
+              padding-bottom: 2rem;
+              display: flex;
+              justify-content: space-between;
+              .recommended-title {
+                font-size: 24px;
+                line-height: 28px;
+                color: #fff;
+                font-family: "Muli", sans-serif;
+                font-weight: bold;
+                margin: 0;
+              }
+              .recommended-btn {
+                border: none;
+                width: 90px;
+                height: 30px;
+                background-color: #4da1ff;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 12px;
+                line-height: 30px;
+                font-family: "Open Sans", sans-serif;
+                font-weight: bold;
+              }
+              .text-dark {
+                padding-left: 6px;
+                font-weight: normal;
+                font-size: 14px;
+              }
+            }
+
+      }
+    // }
+  }
+}
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-image: url(../img/icon-checked.png);
+  background-size: contain;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 528px) {
@@ -473,7 +544,7 @@
   .categories-wrp {
     .wrapper {
       .container-fluid {
-        .row {
+        .ltr {
           display: block;
 
           .category {
@@ -554,6 +625,35 @@
       }
     }
   }
+  // .categories-wrp {
+  //   .wrapper {
+  //     .container-fluid {
+  //       .ltr {
+  //         .category {
+  //           float: left;
+  //         }
+  //         .category__header {
+  //           float: right;
+  //         }
+  //         .category__main {
+  //           float: left;
+  //         }
+  //       }}}
+  // .categories-wrp {
+  //   .wrapper {
+  //     .container-fluid {
+  //       .rtl {
+  //         .category {
+  //           float: right;
+  //         }
+  //         .category__header {
+  //           float: left;
+  //         }
+  //         .category__main {
+  //           float: left;
+  //         }
+  //       }}}
+
 }
 
 @media (min-width: 680px) {
@@ -601,7 +701,9 @@
     .card {
       min-width: 180px;
       max-width: calc(25% - 1rem);
-      margin-left: 0.5rem;
+      // margin-left: 0.25rem;
+      // margin-right: .25rem;
+      margin: 1rem .25rem;
     }
   }
   .category__tabs--dark {

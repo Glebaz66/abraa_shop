@@ -14,6 +14,8 @@ const placehold = document.querySelector(".placeholder-text-change");
 const filter = document.querySelector(".category__sort-show");
 window.addEventListener("resize", setPlaceholder, false);
 
+
+const categoryDirection = document.querySelector('.category-direction')
 // btnWrp.addEventListener("click", hide, false);
 // btnWrpHeader.addEventListener("click", hide, false);
 rfqBtn.addEventListener("click", setWfqWindow, false);
@@ -26,29 +28,31 @@ function changeRTLfooter () {
   
   const strUser = btnRTLfoot.options[btnRTLfoot.selectedIndex].value;
   if ( strUser == "arab") {
-    document.body.style.direction = "rtl";
-    // Array.from(firGroup, el => el.style.direction = "ltr")
-    // console.log(btnRTL.document.querySelectorAll('option')[1]);
-    
-    // btnRTL.document.querySelectorAll('option')[1].selected = ''
-    // btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
+    changeRTL ()
   } else  {
-    // console.log(btnRTL.document.querySelectorAll('option')[1]);
-    document.body.style.direction = "ltr";
-    // btnRTL.document.querySelectorAll('option')[1].selected = ''
-    // btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
+    toLTR ()
   }
 
 }
 function changeRTL () {
   const strUser = btnRTL.options[btnRTL.selectedIndex].value;
   if ( strUser == "arab") {
-    document.body.style.direction = "rtl";
-  } else if (strUser === "en") {
-    document.body.style.direction = "ltr";
-    // btnRTL.document.querySelectorAll('option')[1].selected = ''
-    // btnRTL.document.querySelectorAll('option')[0].selected = 'selected'
+    toRTL ()
+  } else {
+    toLTR ()
   }
+}
+
+function toLTR () {
+  document.body.style.direction = "ltr";
+  categoryDirection.classList.remove('rtr')
+  categoryDirection.classList.add('ltr')
+}
+
+function toRTL () {
+  document.body.style.direction = "rtl";
+    categoryDirection.classList.remove('ltr')
+    categoryDirection.classList.add('rtl')
 }
 
 function setWfqWindow (e) {

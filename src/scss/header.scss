@@ -4,6 +4,7 @@
   height: 4rem;
   display: flex;
   align-items: center;
+  
 }
 #sidebarCollapse {
   width: 40px;
@@ -212,10 +213,15 @@
 @media (min-width: 1200px) {
   .row--header {
     padding-left: 1rem;
+    #content {
+      height: 4rem;
+      display: flex;
+      align-items: center;
+    }
     .logo-wrp {
       padding: 0.75rem;
-      margin-right: 106px;
       img {
+        margin-left: 106px;
         width: 130px;
         height: 39px;
       }
