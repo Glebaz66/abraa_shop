@@ -1414,6 +1414,7 @@ html {
 }
 
 .row--header .input-group--header .product-select {
+  position: relative;
   border: 1px solid #4da1ff;
   background: #4da1ff;
   color: #ffffff;
