@@ -1313,7 +1313,7 @@ html {
   height: 2px;
   margin: 0 auto;
   display: block;
-  background: #555;
+  background: #a8b0bf;
   transition: all 0.8s cubic-bezier(0.81, -0.33, 0.345, 1.375);
   -webkit-transform: scale(0.5);
   transform: scale(0.5);
