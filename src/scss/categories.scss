@@ -55,6 +55,10 @@
             font-size: 14px;
           }
         }
+
+        .custom-control {
+          margin-bottom: 19px;
+        }
       }
 
       .category__header {
@@ -381,6 +385,11 @@
     color: $color-blue;
   }
 }
+
+
+/*
+=============================== CHECKBOX AFTER   ========================================
+
 .checkbox-txt-after {
   direction: ltr !important;
   input {
@@ -395,6 +404,14 @@
   top: -3px;
   color: #b8bbc1;
   direction: ltr !important;
+}
+
+=======================================  CHECKBOX AFTER  END ===========================
+
+*/
+.name__quantity {
+  font-size: 14px;
+  color: #b8bbc1;
 }
 
 // .rtl {
@@ -482,18 +499,18 @@
     // }
   }
 }
-.checkbox:checked + .checkbox-custom::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-image: url(../img/icon-checked.png);
-  background-size: contain;
-  border-radius: 2px;
-  width: 20px;
-  height: 20px;
-}
+// .checkbox:checked + .checkbox-custom::before {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: -2px;
+//   left: -2px;
+//   background-image: url(../img/icon-checked.png);
+//   background-size: contain;
+//   border-radius: 2px;
+//   width: 20px;
+//   height: 20px;
+// }
 
 @media (max-width: 528px) {
   .category__header {
@@ -731,3 +748,6 @@
     color: #fff;
   }
 }
+
+
+

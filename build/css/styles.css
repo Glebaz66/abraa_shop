@@ -1604,6 +1604,10 @@ html {
   font-size: 14px;
 }
 
+.categories-wrp .container-fluid .row .category .custom-control {
+  margin-bottom: 19px;
+}
+
 .categories-wrp .container-fluid .row .category__header {
   min-height: 50px;
   width: 100%;
@@ -1951,14 +1955,15 @@ html {
   color: #4da1ff;
 }
 
+/*
+=============================== CHECKBOX AFTER   ========================================
+
 .checkbox-txt-after {
   direction: ltr !important;
+  input {
+    direction: ltr !important;
+  }
 }
-
-.checkbox-txt-after input {
-  direction: ltr !important;
-}
-
 .category__block .checkbox-txt-after::after {
   content: "(360)";
   position: relative;
@@ -1969,17 +1974,13 @@ html {
   direction: ltr !important;
 }
 
-.checkbox:checked + .checkbox-custom::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-image: url(../img/icon-checked.png);
-  background-size: contain;
-  border-radius: 2px;
-  width: 20px;
-  height: 20px;
+=======================================  CHECKBOX AFTER  END ===========================
+
+*/
+
+.name__quantity {
+  font-size: 14px;
+  color: #b8bbc1;
 }
 
 /*   UP  */
