@@ -1,4 +1,4 @@
-const btnWrpHeader = document.getElementById("content");
+// const btnWrpHeader = document.getElementById("content");
 const btnRTL = document.getElementById("chooseLangugeHeader");
 const btnRTLfoot = document.getElementById("chooseLangugeFooter");
 const rfqBtn = document.querySelector(".rfq-btn");
@@ -16,8 +16,6 @@ window.addEventListener("resize", setPlaceholder, false);
 
 
 const categoryDirection = document.querySelector('.category-direction')
-// btnWrp.addEventListener("click", hide, false);
-// btnWrpHeader.addEventListener("click", hide, false);
 rfqBtn.addEventListener("click", setWfqWindow, false);
 rfqSbt.addEventListener("click", getWfqWindow, false);
 btnRTL.addEventListener("click", changeRTL, false);
@@ -84,19 +82,7 @@ function setPlaceholder() {
 }
 setPlaceholder()
 
-function hide(e) {
-  aside.classList.toggle("hide");
-  header.classList.toggle("show");
-  main.classList.toggle("show");
-  btn.classList.toggle("active");
-  Array.from(card, el => el.classList.toggle("card--fullscreen"))
-  if (filter.textContent.toLowerCase() === "hide filters") {
-    
-    filter.textContent = "show filters";
-  } else {
-    filter.textContent = "hide filters";
-  }
-}
+
 
 
 $(function () {

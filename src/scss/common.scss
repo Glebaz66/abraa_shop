@@ -45,6 +45,12 @@ $color-bg-dot: #5D6475;
   fill: currentColor;
 }
 
+svg defs {
+  height: 0 !important;
+  position: absolute;
+  width: 0;
+}
+
 // .rtl {
 //   direction: rtl;
 // }
